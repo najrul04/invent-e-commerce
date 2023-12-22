@@ -29,6 +29,7 @@
 html {
   @extend %body;
   background: var(--theme-bg);
+  // background: wheat;
   -webkit-font-smoothing: antialiased;
   opacity: 0;
 
@@ -46,8 +47,8 @@ body,
 
 body {
   font-family: var(--font-jost);
-  padding: 0;
   margin: 0;
+  padding: 0;
   color: var(--color-dark-500);
 
   display: flex;
@@ -111,6 +112,7 @@ ol {
 
 a {
   color: var(--color-dark-500);
+  text-decoration: none;
 
   &:focus {
     opacity: .8;
