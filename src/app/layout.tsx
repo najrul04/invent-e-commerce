@@ -12,7 +12,7 @@ import { mergeOpenGraph } from './_utilities/mergeOpenGraph'
 import './_css/app.scss'
 
 const jost = Jost({
-  subsets: ['latin-ext'],
+  subsets: ['latin'],
   weight: ['400', '700'],
   variable: '--font-jost',
 })
@@ -30,9 +30,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <AdminBar />
           {/* @ts-expect-error */}
           <Header />
-
-          <main>{children}</main>
-
+          <main className="main">{children}</main>
           {/* @ts-expect-error */}
           <Footer />
         </Providers>
