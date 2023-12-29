@@ -26,7 +26,7 @@ export default async function Page({ params: { slug = 'home' } }) {
   const { isEnabled: isDraftMode } = draftMode()
 
   let page: Page | null = null
-  let categories: Category[] | null | null
+  let categories: Category[] | null = null
 
   try {
     page = await fetchDoc<Page>({
